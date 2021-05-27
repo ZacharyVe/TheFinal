@@ -1,0 +1,27 @@
+// building the trending giphs on load display
+//   componentDidMount() {
+// // url for trending giphs should be inside initial state
+//     let trendUrl = `https://api.giphy.com/v1/gifs/trending?api_key=${giphyKey}&limit=${limit}&rating=${rating}`;
+//     fetch(trendUrl)
+//       .then((response) => response.json())
+//       .then((trendResults) => {
+//         var giphyRows = [];
+//         console.log(trendResults.results)
+//         trendResults.results.forEach((giphy) => {
+//           const giphyRow = (
+//             <div key={giphy.id}>
+//               {/* giphs from api url use giphy.url*/}
+//               <img alt="giphy" src={`${giphy.url}`}></img>
+//               {giphy.title}
+//             </div>
+//           );
+//           giphyRows.push(giphyRow);
+//         });
+
+//         this.setState({
+//           rows: giphyRows,
+//         });
+//       })
+
+//       .catch((error) => console.error("error from API: ", error));
+//   }
